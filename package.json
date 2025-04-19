@@ -1,0 +1,27 @@
+{
+  "name": "campus-spot",
+  "version": "1.0.0",
+  "description": "A web application for sharing and discovering study spots on campus",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+  "start": "node src/server.js",
+  "dev": "nodemon src/server.js",
+  "seed": "node scripts/generateData.js",
+  "client": "cd client && npm start",
+  "build": "cd client && npm run build"
+  },
+  "keywords": ["study", "campus", "spots", "review"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.20.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2"
+  }
+}
